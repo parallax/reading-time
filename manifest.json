@@ -1,0 +1,12 @@
+{
+	"name": "Reading Time for Readability",
+	"version": "0.1",
+	"description": "Adds an estimated reading time to readability",
+	"background_page" : "background.html",
+	"permissions": ["http://*/*"],
+	"content_scripts": [{
+		"matches": ["http://www.readability.com/articles/*"],
+		"js": ["jquery.js", "readingtime.js"]
+		}
+	]
+}
